@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { SidebarItems } from '@/components/sidebar-items';
 import { ClerkLoaded, ClerkLoading, UserButton } from '@clerk/nextjs';
 import { Loader } from 'lucide-react';
+import { SiSololearn } from 'react-icons/si';
 
 type props = {
   className?: string;
@@ -18,8 +19,8 @@ export const Sidebar = ({ className }: props) => {
     >
       <Link href="/learn">
         <div className="items-centergap-x-3 flex pb-7 pl-4 pt-8">
-          <h1 className="flex justify-evenly pl-6 pt-1 text-3xl font-extrabold tracking-wide text-[#5ACB05]">
-            Lingo
+          <h1 className="flex justify-evenly pt-1 text-3xl font-extrabold tracking-wide text-[#5ACB05]">
+            <SiSololearn className="ml-1 mt-0.5 pr-1.5 text-[#5ACB05]" /> Lingo
           </h1>
         </div>
       </Link>
