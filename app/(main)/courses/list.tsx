@@ -23,9 +23,11 @@ export const List = ({ courses, activeCourseId }: Props) => {
     }
 
     startTransition(() => {
-      upsertUserProgress(id).then((r) => {
-        return new Error('Not Found');
-      });
+      upsertUserProgress(id)
+        .then(() => {})
+        .catch((error) => {
+          console.error('Failed to update user progress:', error);
+        });
     });
   };
 
