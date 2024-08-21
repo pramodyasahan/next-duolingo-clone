@@ -32,7 +32,7 @@ export const Sidebar = ({ className }: props) => {
       </div>
       <div className="p-4">
         <ClerkLoading>
-          <Loader className="text-muted-foreground h-5 w-5 animate-spin" />
+          <Loader className="h-5 w-5 animate-spin text-muted-foreground" />
         </ClerkLoading>
         <ClerkLoaded>
           <UserButton afterSignOutUrl="/" />

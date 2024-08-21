@@ -19,7 +19,7 @@ export const Header = () => {
           <h1 className="pl-2 pt-1 text-2xl font-extrabold tracking-wide text-green-600">Lingo</h1>
         </div>
         <ClerkLoading>
-          <Loader className="text-muted-foreground h-5 w-5" />
+          <Loader className="h-5 w-5 text-muted-foreground" />
         </ClerkLoading>
         <ClerkLoaded>
           <SignedIn>
